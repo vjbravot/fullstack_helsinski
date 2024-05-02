@@ -1,6 +1,9 @@
-const Contact = ({person}) =>{
+const Contact = ({person, handleDelete}) =>{
     return (
-      <p>{person.name} {person.number}</p>
+      <p>{person.name} {person.number} 
+      <button onClick = {handleDelete}>
+        delete</button>
+        </p>
     )
     }
 
